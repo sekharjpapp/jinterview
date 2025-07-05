@@ -2,7 +2,16 @@ package com.pixel.wipro;
 
 import java.util.ArrayList;
 
-    public class NthHighestNumber {
+/** * This class provides a method to find the nth highest number in a list of integers.
+ * It iteratively finds the maximum number and removes it from the list until the nth highest is found.
+ * * Example usage:
+ * * Input: [10, 30, 50, 20, 40], n = 4
+ * * Output: The 4th highest number is: 20
+ * * Note: The method assumes that n is valid (1 <= n <= size of the list).
+ * * This implementation is not the most efficient for large lists, but it demonstrates the concept clearly.
+ */
+
+public class NthHighestNumber {
     public static void main(String[] args) {
 
         ArrayList<Integer> numbers = new ArrayList<>();

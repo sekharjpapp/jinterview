@@ -8,6 +8,7 @@ Input:
 Output:
 [-1, 1, 2, 3, 4, -1, 6, -1, -1, 9]
  * */
+
 public class RearrangeArray {
     public static int[] replaceMissingNumbers(int[] arr, int n) {
         int[] result = new int[n];

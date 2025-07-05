@@ -2,6 +2,19 @@ package com.pixel.wipro.factorypattern;
 
 import java.util.Scanner;
 
+/* * Factory Pattern Example for Publications
+ * This code demonstrates the Factory Pattern by creating different types of publications
+ * based on user input. It uses an enum to define publication types and a factory method
+ * to create instances of the appropriate publication class.
+ * * The Publication class is an abstract superclass, and specific publication types
+ * (Novel, ComicBook, Newspaper, OtherPublication) extend this class.
+ * * The factory method `getPublication` takes a `PublicationType` and a title,
+ * creating the appropriate publication object based on the type.
+ * * The main method prompts the user for the type of publication and its title,
+ * then creates the publication and displays its type and title.
+ *
+ */
+
 // Enum for Publication Types
 enum PublicationType {
     NOVEL("novel"),

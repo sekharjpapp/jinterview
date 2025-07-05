@@ -3,6 +3,20 @@ package com.pixel.spglobal;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class finds the itinerary from a given dataset of locations.
+ * It assumes that the dataset is a mapping of departure locations to arrival locations.
+ * The itinerary is printed in the order of travel starting from the first location.
+ * Example dataset:
+ * Chennai -> Banglore
+ * Bombay -> Delhi
+ * Goa -> Chennai
+ * Delhi -> Goa
+ * The output will be:
+ * Chennai->Banglore, Banglore->Delhi, Delhi->Goa, Goa->Chennai,
+ * where the last location connects back to the first, completing the itinerary.
+ */
+
 public class FindItinerary {
     public static void main(String[] args) {
         Map<String, String> dataSet = new HashMap<>();

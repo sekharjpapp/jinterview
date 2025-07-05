@@ -6,6 +6,13 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/* * Input:
+ * arr1 = {1, 3, 5, 7}
+ * arr2 = {2, 4, 6, 8}
+ * Output:
+ * [1, 2, 3, 4, 5, 6, 7, 8]
+ */
+
 public class CombineArraysample {
     public static void main(String[] args) {
         //Write a function to merge two sorted arrays into a single sorted

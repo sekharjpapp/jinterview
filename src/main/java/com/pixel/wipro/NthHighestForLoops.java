@@ -1,5 +1,14 @@
 package com.pixel.wipro;
 
+/* * This Java program finds the nth highest number in an array using for loops.
+ * It iterates through the array n times, each time finding the maximum element
+ * from the remaining unsorted portion of the array and placing it in the correct position.
+ * * Example usage:
+ * * Input: [4, 2, 9, 7, 5, 6, 3, 8, 1], n = 1
+ * * Output: The 1st highest number is: 9
+ * * Note: The method assumes that n is valid (1 <= n <= size of the array).
+ */
+
 public class NthHighestForLoops {
     public static void main(String[] args) {
         int[] nums = {4, 2, 9, 7, 5, 6, 3, 8, 1};

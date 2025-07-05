@@ -4,6 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
+/**
+ * This class provides a method to reorganize a string such that no two adjacent characters are the same.
+ * If it's not possible to reorganize the string, it returns an empty string.
+ * the algorithm uses a max heap to prioritize characters based on their frequency.
+ * * Example:
+ * Input: "aaabb"
+ * Output: "aba" or "bab" (any valid reorganization)
+ * Input: "aaab"
+ * Output: "" (not possible to reorganize)
+ */
+
 public class ReorganizeString {
 
     public static String reorganizeString(String s) {

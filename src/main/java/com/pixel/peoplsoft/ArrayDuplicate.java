@@ -5,6 +5,13 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/** * This class demonstrates how to find the first non-repeating integer in an array.
+ * It uses both a functional approach with streams and a traditional loop.
+ * * The functional approach groups the elements by their frequency and filters out those that appear only once.
+ * * The traditional approach uses a HashMap to count occurrences and then finds the first element with a count of one.
+ * *
+ */
+
 public class ArrayDuplicate {
     public static void main(String[] args) {
         // Given a non-empty array of integers nums,
