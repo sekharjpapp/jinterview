@@ -20,10 +20,10 @@ public class ProblemSample {
 
         System.out.println(duplicatesNums);
 
-       empSal.stream()
+        /*empSal.stream()
                 .soreted(Comparator.reverseOrder())
                 .skip(1)
-                .findFirst();
+                .findFirst();*/
 
         /*
              SELECT salary
