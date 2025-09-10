@@ -1,6 +1,8 @@
 package com.pixel;
 
 import com.pixel.nessdigital.singletonproto.ReportService;
+import com.pixel.webflux.controller.TradeController;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +11,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
+@RequiredArgsConstructor
 public class DevJava17OopsTimApp {
 
 	@Autowired
 	private ReportService reportService;
+
+    @Autowired
+    private final TradeController tradeController;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DevJava17OopsTimApp.class, args);

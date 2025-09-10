@@ -12,7 +12,7 @@ package com.pixel.wipro;
 public class NthHighestForLoops {
     public static void main(String[] args) {
         int[] nums = {4, 2, 9, 7, 5, 6, 3, 8, 1};
-        int n = 1;
+        int n = 2;
         System.out.println("The " + n + "rd highest number is: " + getNthHighest(nums, n));
     }
     // Method to find the nth highest number in an array
