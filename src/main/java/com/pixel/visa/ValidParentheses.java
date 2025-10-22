@@ -9,6 +9,8 @@ public class ValidParentheses {
                 """;
         System.out.println(isValidJavaMethod(code));
         System.out.println(isValid(code));
+        String s = "([)]";
+        System.out.println(isValid(s));
     }
 
     public static boolean isValidJavaMethod(String code) {
@@ -49,8 +51,6 @@ public class ValidParentheses {
             }
             // all other characters ignored
         }
-
         return stack.isEmpty();
     }
-
 }

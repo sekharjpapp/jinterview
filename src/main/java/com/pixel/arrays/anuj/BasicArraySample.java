@@ -6,7 +6,7 @@ public class BasicArraySample {
         // min number from array
         int[] numbers = { 10, 20, 30, 40, 50 };
         for (int i = 0; i <names.length; i++) {
-            //System.out.println(i);
+            System.out.println(i);
         }
         for (String name: names) {
             System.out.println(name);

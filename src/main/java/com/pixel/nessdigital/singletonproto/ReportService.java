@@ -4,6 +4,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
+/*
+* ReportService what the singleton bean will use the prototype bean Report
+*
+* */
 @Service
 @RequiredArgsConstructor
 public class ReportService {
