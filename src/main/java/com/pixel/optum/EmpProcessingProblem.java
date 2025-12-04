@@ -42,7 +42,8 @@ public class EmpProcessingProblem {
                 .max(Map.Entry.comparingByValue());
         System.out.println(max);
         // TODO -Group by department and get highest paid employee in each dept
-        Map<String, Optional<EmployeeOptum>> highestPaidEmployee = employees.stream().collect(Collectors.groupingBy(EmployeeOptum::getDepartment,
+        Map<String, Optional<EmployeeOptum>> highestPaidEmployee = employees.stream()
+                .collect(Collectors.groupingBy(EmployeeOptum::getDepartment,
                 Collectors.maxBy(Comparator.comparingDouble(EmployeeOptum::getSal))));
         System.out.println("------Highest paid employee in each dept ------" );
         highestPaidEmployee.forEach((dep, emp) -> System.out.println(dep + " " + emp) );

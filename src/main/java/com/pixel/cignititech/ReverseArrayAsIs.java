@@ -1,5 +1,8 @@
 package com.pixel.cignititech;
 
+/*
+* Reverse an array as is using Java Streams
+* */
 import java.util.Arrays;
 import java.util.stream.IntStream;
 

@@ -1,7 +1,6 @@
 package com.pixel.bifunction;
 
 import org.springframework.web.util.UriComponentsBuilder;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
@@ -9,7 +8,7 @@ import java.util.function.BiFunction;
 public class BiFunctionSample {
     public static void main(String[] args) {
         // Example usage of BiFunction
-        java.util.function.BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
+        BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
         int result = add.apply(5, 10);
         System.out.println("Result of addition: " + result);
 
