@@ -4,6 +4,7 @@ public class StaticMethodsHiding {
     public static void main(String[] args) {
         Parent parent = new Child();
         parent.display(); // Calls Parent's static method
+
     }
 }
 class Parent {

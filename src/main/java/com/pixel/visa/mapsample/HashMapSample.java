@@ -1,5 +1,7 @@
 package com.pixel.visa.mapsample;
 
+import lombok.Data;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,10 +32,9 @@ public class HashMapSample {
         System.out.println("Map size: " + map.size());
     }
 }
-
 class Emp {
-   String name;
-   int id;
+  private String name;
+  private int id;
 
     public Emp(String name, int id) {
         this.name = name;
