@@ -1,6 +1,8 @@
 package com.pixel;
 
 import com.pixel.nessdigital.singletonproto.ReportService;
+import com.pixel.springdp.PaymentType;
+import com.pixel.springdp.service.PaymentService;
 import com.pixel.webflux.controller.TradeController;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +12,14 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.event.EventListener;
 
+import java.math.BigDecimal;
+
 @SpringBootApplication
 @RequiredArgsConstructor
 public class DevJava17OopsTimApp {
+
+    @Autowired
+    private PaymentService paymentService;
 
 	@Autowired
 	private ReportService reportService;
@@ -31,6 +38,7 @@ public class DevJava17OopsTimApp {
 		isCarFalse();
 		reportService.generateCustomReport("Report for User1");
 		reportService.generateCustomReport("Report for User2");
+        paymentService.process(PaymentType.CARD, BigDecimal.valueOf(400));
 	}
 
 

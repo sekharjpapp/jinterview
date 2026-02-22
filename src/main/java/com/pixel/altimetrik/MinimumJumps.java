@@ -1,5 +1,20 @@
 package com.pixel.altimetrik;
-
+/*
+* MinimumJumps : Given an array of non-negative integers where each element represents the maximum jump length at that position,
+* write a function to determine the minimum number of jumps required to reach the last index of the array starting from the first index.
+* If it is not possible to reach the end, return -1.
+* * Example:
+* Input: [1, 4, 1, 8, 9, 2, 6, 7, 6, 8, 9]
+* Output: 3
+* Explanation: The minimum number of jumps to reach the last index is 3. Jump 1 step from index 0 to 1,
+* then 4 steps to index 5, and finally 4 steps to the last index.
+* Input: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+* Output: 10
+* Explanation: The minimum number of jumps to reach the last index is 10. You need to make a jump of 1 step at each index.
+* Input: [0, 1, 1, 1]
+* Output: -1
+* Explanation: It is not possible to reach the last index from the first index since the first element is 0.
+* */
 public class MinimumJumps {
     public static void main(String[] args) {
         int[] arr1 = {1, 4, 1, 8, 9, 2, 6, 7, 6, 8, 9};
