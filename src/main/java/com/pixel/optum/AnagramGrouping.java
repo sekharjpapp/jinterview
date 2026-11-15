@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 public class AnagramGrouping {
     public static void main(String[] args) {
-        //List<String> words = Arrays.asList("listen", "silent", "enlist", "rat", "tar", "art", "god", "dog");
+        List<String> words1 = Arrays.asList("listen", "silent", "enlist", "rat", "tar", "art", "god", "dog");
         String[] words = {"listen", "silent", "enlist", "rat", "tar", "art", "god", "dog"};
-       // anagramGrouping(words);
+        anagramGrouping(words1);
         anagramStringGrouping(words);
     }
     public static void anagramGrouping(List<String> words) {

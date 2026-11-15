@@ -41,6 +41,7 @@ public class MinDeletionPalindrome {
         }
 
         return removed;
+       
     }
 
     public static String longestPalindromicSubsequence(String s) {

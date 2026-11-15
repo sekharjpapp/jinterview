@@ -1,6 +1,5 @@
 package com.pixel.visa.mindels;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
